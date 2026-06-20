@@ -61,7 +61,7 @@ The oracle marks valid Sudoku solutions by applying a phase shift. It implements
 The diffuser amplifies the amplitudes of marked states (solutions) and diminishes unmarked states. It involves Hadamard gates, X gates, a multi-controlled Z gate (MCZ), and then reverses the X and Hadamard gates.
 
 ### 8. Apply Grover Iterations
-The oracle and diffuser are repeatedly applied. The optimal number of iterations is calculated as approximately $\frac{\pi}{4} \sqrt{2^{2 \times \text{num_empty}}}$.
+The oracle and diffuser are repeatedly applied.
 
 ### 9. Measure and Execute the Circuit
 `var_qubits` are measured and mapped to `cbits`. The `AerSimulator` runs the circuit, and `plot_histogram` visualizes the measurement outcomes, showing the probability distribution of solutions.
