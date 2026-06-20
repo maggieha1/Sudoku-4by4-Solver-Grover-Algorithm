@@ -1,6 +1,3 @@
-# Sudoku-4by4-Solver-Grover-Algorithm
-This project illustrates 
-
 # Grover's Algorithm to Solve Sudoku $n^2 \times n^2$ when $n = 2$
 
 ## Overview
