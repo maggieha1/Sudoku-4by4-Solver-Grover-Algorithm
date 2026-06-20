@@ -82,18 +82,3 @@ This notebook effectively demonstrates Grover's algorithm's capability to solve 
 *   Czelusta, G., Verma, D. R., & Wanjalkar, G. (2024). Grover's algorithm on two-way quantum computer. arXiv. https://doi.org/10.48550/arxiv.2406.09450.
 *   Jones, D., & Varcoe, B. (2022). A Method for Application of a Quantum Search Algorithm to Classical Databases. arXiv. https://doi.org/10.48550/arxiv.2206.03938.
 
-This notebook demonstrates how to solve a 4x4 Sudoku puzzle using Grover's algorithm within IBM's Qiskit framework. It covers the setup of the Sudoku instance, identification of empty and pre-filled cells, and extraction of Sudoku constraints (clauses). The quantum circuit is initialized with variable, clause, ancillary, and output qubits. The core of the algorithm involves defining an oracle function to mark valid Sudoku solutions by phase shifting, and a diffuser function to amplify these marked states. These functions are applied iteratively, and the circuit is then executed on a simulator. Finally, the measurement results are interpreted to display the solved Sudoku board. The notebook also includes visualizations of the quantum circuit in both ASCII and Matplotlib formats.
-
-Key steps include:
-1.  **Preparation:** Setting up the 4x4 Sudoku board and defining parameters.
-2.  **Identification:** Distinguishing between empty and given cells.
-3.  **Constraints:** Generating clauses for conflicts between empty and given cells, and between empty cells themselves.
-4.  **Circuit Setup:** Defining quantum registers and initializing the quantum circuit.
-5.  **State Initialization:** Creating a uniform superposition and setting the output qubit for phase kickback.
-6.  **Oracle:** Implementing Sudoku rules to mark valid solutions.
-7.  **Diffuser:** Amplifying marked solutions and diminishing unmarked ones.
-8.  **Grover Iterations:** Repeatedly applying the oracle and diffuser.
-9.  **Execution & Measurement:** Running the circuit on a simulator and obtaining measurement results.
-10. **Interpretation:** Converting the most probable measurement into the solved Sudoku board.
-
-The notebook concludes by showcasing the potential of quantum computing for combinatorial problem-solving with relevant references.
